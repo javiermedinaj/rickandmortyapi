@@ -1,19 +1,17 @@
-import { useEffect } from 'react'
 import './App.css'
+import Character from './components/Character'
+import CharacterList from './components/CharacterList'
 
 function App() {
-  useEffect(() => {
-    async function fetchData() {
-      const response = await fetch('https://rickandmortyapi.com/api/character');
-      const data = await response.json();
-      console.log(data)
-    }
-    fetchData()
-  }, []);
+
 
   return (
-    <div className="App">
-      <h1>rick and morty app</h1>
+    <div className="App bg-dark text-white">
+      <h1>Rick and morty app</h1>
+      <Character />
+      <CharacterList />
+
+
     </div>
   )
 }
