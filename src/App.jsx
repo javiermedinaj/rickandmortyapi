@@ -1,16 +1,18 @@
 import './App.css'
 import Character from './components/Character'
 import CharacterList from './components/CharacterList'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 
 function App() {
 
 
   return (
     <div className="App bg-dark text-white">
-      <h1>Rick and morty app</h1>
+      <Navbar />
       <Character />
       <CharacterList />
-
+      <Footer />
 
     </div>
   )
