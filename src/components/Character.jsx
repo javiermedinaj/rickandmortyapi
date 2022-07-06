@@ -2,9 +2,10 @@ import React from 'react'
 
 const Character = (character) => {
     return (
-        <div key={character.id}>
+        <div className="text-center p-5">
             <h2>{character.name}</h2>
-            <img src={character.image} ></img>
+            <img className="img-fluid rounded-pill" src={character.image} ></img>
+            <p>{character.origin && character.origin.name}</p>
         </div>
     )
 }
