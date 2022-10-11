@@ -3,36 +3,9 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="text-center text-lg-start bg-light text-muted">
+        <footer className="text-center text-lg-start bg-light text-muted p-2">
 
-            <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 
-                <div className="me-5 d-none d-lg-block">
-                    <span>Practique</span>
-                </div>
-
-                <div>
-                    <a href className="me-4 text-reset">
-                        <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href className="me-4 text-reset">
-                        <i className="fab fa-twitter" />
-                    </a>
-                    <a href className="me-4 text-reset">
-                        <i className="fab fa-google" />
-                    </a>
-                    <a href className="me-4 text-reset">
-                        <i className="fab fa-instagram" />
-                    </a>
-                    <a href className="me-4 text-reset">
-                        <i className="fab fa-linkedin" />
-                    </a>
-                    <a href className="me-4 text-reset">
-                        <i className="fab fa-github" />
-                    </a>
-                </div>
-
-            </section>
 
             <section className="true">
                 <div className="container text-center text-md-start mt-5">
@@ -45,13 +18,13 @@ const Footer = () => {
                                 <i className="fas fa-gem me-3" />Javier Medina
                             </h6>
                             <p>
-                                Junior development
+                                Proyecto hecho con API de <a href="https://rickandmortyapi.com/" target="_blank">Rick and morty</a>
                             </p>
                         </div>
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
                             <h6 className="text-uppercase fw-bold mb-4">
-                                Proyects
+                                Otros proyectos
                             </h6>
                             <p>
                                 <a href="https://github.com/javiermedinaj/cripto-react" target="_blank" className="text-reset">Price of cripto</a>
@@ -79,7 +52,7 @@ const Footer = () => {
                 </div>
             </section>
 
-        </footer>
+        </footer >
 
     );
 }

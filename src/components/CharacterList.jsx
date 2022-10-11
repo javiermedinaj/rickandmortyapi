@@ -9,7 +9,7 @@ function NavPage({ page, setPage }) {
             {page - 41 ? (
                 <li className="page-item">
                     <button className="btn btn-primary btn-sm" onClick={() => setPage(page + 1)}>
-                        Siguiente {page + 1}
+                        Siguiente {page}
                     </button>
                 </li>
             ) : null}
@@ -25,7 +25,7 @@ function BackPage({ page, setPage }) {
             {page - 1 ? (
                 <li className="page-item">
                     <button className="btn btn-primary btn-sm" onClick={() => setPage(page - 1)}>
-                        Volver {page - 1}
+                        Volver {page}
                     </button>
                 </li>
             ) : null}
